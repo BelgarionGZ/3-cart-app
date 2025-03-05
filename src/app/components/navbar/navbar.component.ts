@@ -9,9 +9,9 @@ import { CartItem } from '../../models/cart-item';
 })
 export class NavbarComponent {
   @Input() public items: CartItem[] = [];
-  @Output() public showCart: EventEmitter<void> = new EventEmitter<void>();
+  @Output() public showCartEventEmitter: EventEmitter<void> = new EventEmitter<void>();
 
   openCart(): void {
-    this.showCart.emit();
+    this.showCartEventEmitter.emit();
   }
 }
