@@ -1,3 +1,4 @@
+<h4>Catálogo de productos App!</h4>
 <div class="row">
     @for (product of products; track $index) {
         <div product-card class="col-4 my-2" [product]="product" (productEventEmitter)="onAddCart($event)"></div>
